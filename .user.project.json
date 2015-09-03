@@ -1,0 +1,57 @@
+{
+  "run": [
+    {
+      "filePath": "/sprint-planning-fiori/index.html",
+      "previewMode": 0,
+      "dataMode": 1,
+      "workspace": "withoutWorkspace",
+      "ui5ActiveVersion": null,
+      "isDefaultVersion": 0,
+      "urlParameters": [
+        {
+          "paramName": "",
+          "paramValue": "",
+          "paramActive": false
+        },
+        {
+          "paramName": "",
+          "paramValue": "",
+          "paramActive": false
+        }
+      ],
+      "ui5VerSource": null,
+      "_metadata": {
+        "id": 2395186,
+        "runnerId": "webapprunner",
+        "displayName": "New Web Application"
+      }
+    },
+    {
+      "filePath": "/sprint-planning-fiori/Component.js",
+      "previewMode": 0,
+      "dataMode": 1,
+      "workspace": "withoutWorkspace",
+      "ui5ActiveVersion": null,
+      "ui5VerSource": null,
+      "isDefaultVersion": 0,
+      "urlParameters": [
+        {
+          "paramName": "",
+          "paramValue": "",
+          "paramActive": false
+        },
+        {
+          "paramName": "",
+          "paramValue": "",
+          "paramActive": false
+        }
+      ],
+      "hashParameter": "",
+      "_metadata": {
+        "id": 6694627,
+        "runnerId": "fiorirunner",
+        "displayName": "New SAP Fiori Component on Sandbox"
+      }
+    }
+  ]
+}

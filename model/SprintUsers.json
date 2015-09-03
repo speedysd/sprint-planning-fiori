@@ -1,0 +1,191 @@
+[{
+	"Capacity": 9,
+	"Id": 1,
+	"SprintId": 4,
+	"UserId": 2,
+	"__metadata": {
+		"uri": "SprintUsers(389)",
+		"type": "scrum.SprintUser"
+	},
+	"SprintDetails": {
+		"__deferred": {
+			"uri": "SprintUsers(389)/SprintDetails"
+		}
+	},
+	"UserDetails": {
+		"__deferred": {
+			"uri": "SprintUsers(389)/UserDetails"
+		}
+	}
+}, {
+	"Capacity": 8,
+	"Id": 2,
+	"SprintId": 4,
+	"UserId": 1,
+	"__metadata": {
+		"uri": "SprintUsers(9594)",
+		"type": "scrum.SprintUser"
+	},
+	"SprintDetails": {
+		"__deferred": {
+			"uri": "SprintUsers(9594)/SprintDetails"
+		}
+	},
+	"UserDetails": {
+		"__deferred": {
+			"uri": "SprintUsers(9594)/UserDetails"
+		}
+	}
+}, {
+	"Capacity": 7,
+	"Id": 3,
+	"SprintId": 4,
+	"UserId": 3,
+	"__metadata": {
+		"uri": "SprintUsers(1267)",
+		"type": "scrum.SprintUser"
+	},
+	"SprintDetails": {
+		"__deferred": {
+			"uri": "SprintUsers(1267)/SprintDetails"
+		}
+	},
+	"UserDetails": {
+		"__deferred": {
+			"uri": "SprintUsers(1267)/UserDetails"
+		}
+	}
+}, {
+	"Capacity": 8,
+	"Id": 4,
+	"SprintId": 3,
+	"UserId": 4,
+	"__metadata": {
+		"uri": "SprintUsers(9806)",
+		"type": "scrum.SprintUser"
+	},
+	"SprintDetails": {
+		"__deferred": {
+			"uri": "SprintUsers(9806)/SprintDetails"
+		}
+	},
+	"UserDetails": {
+		"__deferred": {
+			"uri": "SprintUsers(9806)/UserDetails"
+		}
+	}
+}, {
+	"Capacity": 7,
+	"Id": 5,
+	"SprintId": 3,
+	"UserId": 2,
+	"__metadata": {
+		"uri": "SprintUsers(1519)",
+		"type": "scrum.SprintUser"
+	},
+	"SprintDetails": {
+		"__deferred": {
+			"uri": "SprintUsers(1519)/SprintDetails"
+		}
+	},
+	"UserDetails": {
+		"__deferred": {
+			"uri": "SprintUsers(1519)/UserDetails"
+		}
+	}
+}, {
+	"Capacity": 9,
+	"Id": 6,
+	"SprintId": 2,
+	"UserId": 3,
+	"__metadata": {
+		"uri": "SprintUsers(8116)",
+		"type": "scrum.SprintUser"
+	},
+	"SprintDetails": {
+		"__deferred": {
+			"uri": "SprintUsers(8116)/SprintDetails"
+		}
+	},
+	"UserDetails": {
+		"__deferred": {
+			"uri": "SprintUsers(8116)/UserDetails"
+		}
+	}
+}, {
+	"Capacity": 6,
+	"Id": 7,
+	"SprintId": 1,
+	"UserId": 2,
+	"__metadata": {
+		"uri": "SprintUsers(3905)",
+		"type": "scrum.SprintUser"
+	},
+	"SprintDetails": {
+		"__deferred": {
+			"uri": "SprintUsers(3905)/SprintDetails"
+		}
+	},
+	"UserDetails": {
+		"__deferred": {
+			"uri": "SprintUsers(3905)/UserDetails"
+		}
+	}
+}, {
+	"Capacity": 7,
+	"Id": 8,
+	"SprintId": 1,
+	"UserId": 4,
+	"__metadata": {
+		"uri": "SprintUsers(4383)",
+		"type": "scrum.SprintUser"
+	},
+	"SprintDetails": {
+		"__deferred": {
+			"uri": "SprintUsers(4383)/SprintDetails"
+		}
+	},
+	"UserDetails": {
+		"__deferred": {
+			"uri": "SprintUsers(4383)/UserDetails"
+		}
+	}
+}, {
+	"Capacity": 8,
+	"Id": 9,
+	"SprintId": 1,
+	"UserId": 1,
+	"__metadata": {
+		"uri": "SprintUsers(358)",
+		"type": "scrum.SprintUser"
+	},
+	"SprintDetails": {
+		"__deferred": {
+			"uri": "SprintUsers(358)/SprintDetails"
+		}
+	},
+	"UserDetails": {
+		"__deferred": {
+			"uri": "SprintUsers(358)/UserDetails"
+		}
+	}
+}, {
+	"Capacity": 9,
+	"Id": 10,
+	"SprintId": 1,
+	"UserId": 3,
+	"__metadata": {
+		"uri": "SprintUsers(706)",
+		"type": "scrum.SprintUser"
+	},
+	"SprintDetails": {
+		"__deferred": {
+			"uri": "SprintUsers(706)/SprintDetails"
+		}
+	},
+	"UserDetails": {
+		"__deferred": {
+			"uri": "SprintUsers(706)/UserDetails"
+		}
+	}
+}]

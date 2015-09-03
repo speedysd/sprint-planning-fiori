@@ -1,0 +1,42 @@
+{
+  "dataBinding": {
+    "/view/Master.view.xml": {
+      "entitySet": "Sprints"
+    },
+    "/view/Detail.view.xml": {
+      "entitySet": "Sprints"
+    },
+    "/view/NotFound.view.xml": {
+      "entitySet": "UNBINDKEY"
+    },
+    "/view/App.view.xml": {
+      "entitySet": "UNBINDKEY"
+    }
+  },
+  "generation": [
+    {
+      "templateId": "ui5template.fioriMasterDetail",
+      "templateVersion": "1.4.0",
+      "dateTimeStamp": "Sun, 24 May 2015 18:58:14 GMT"
+    }
+  ],
+  "translation": {
+    "translationDomain": "",
+    "supportedLanguages": "en,fr,de",
+    "defaultLanguage": "en",
+    "defaultI18NPropertyFile": "i18n.properties",
+    "resourceModelName": "i18n"
+  },
+  "mockpreview": {
+    "mockUri": "/destinations/scrum/scrum-server-0.0.1-SNAPSHOT/scrum.svc/",
+    "metadataFilePath": "model/metadata.xml",
+    "loadJSONFiles": true,
+    "loadCustomRequests": false,
+    "mockRequestsFilePath": ""
+  },
+  "hcpdeploy": {
+    "account": "i832981trial",
+    "name": "asd",
+    "lastVersionWeTriedToDeploy": "1.0.0"
+  }
+}

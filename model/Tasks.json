@@ -1,0 +1,141 @@
+[{
+	"Estimate": 10,
+	"Id": 1,
+	"Name": "Design Feature 1",
+	"SprintId": 4,
+	"__metadata": {
+		"uri": "Tasks(8979)",
+		"type": "scrum.Task"
+	},
+	"SprintDetails": {
+		"__deferred": {
+			"uri": "Tasks(8979)/SprintDetails"
+		}
+	}
+}, {
+	"Estimate": 15,
+	"Id": 2,
+	"Name": "Implement Feature 1",
+	"SprintId": 4,
+	"__metadata": {
+		"uri": "Tasks(6545)",
+		"type": "scrum.Task"
+	},
+	"SprintDetails": {
+		"__deferred": {
+			"uri": "Tasks(6545)/SprintDetails"
+		}
+	}
+}, {
+	"Estimate": 8,
+	"Id": 3,
+	"Name": "Test Feature 1",
+	"SprintId": 4,
+	"__metadata": {
+		"uri": "Tasks(9783)",
+		"type": "scrum.Task"
+	},
+	"SprintDetails": {
+		"__deferred": {
+			"uri": "Tasks(9783)/SprintDetails"
+		}
+	}
+}, {
+	"Estimate": 12,
+	"Id": 4,
+	"Name": "Implement Feature 1",
+	"SprintId": 3,
+	"__metadata": {
+		"uri": "Tasks(906)",
+		"type": "scrum.Task"
+	},
+	"SprintDetails": {
+		"__deferred": {
+			"uri": "Tasks(906)/SprintDetails"
+		}
+	}
+}, {
+	"Estimate": 17,
+	"Id": 5,
+	"Name": "Document Feature 1",
+	"SprintId": 3,
+	"__metadata": {
+		"uri": "Tasks(1516)",
+		"type": "scrum.Task"
+	},
+	"SprintDetails": {
+		"__deferred": {
+			"uri": "Tasks(1516)/SprintDetails"
+		}
+	}
+}, {
+	"Estimate": 20,
+	"Id": 6,
+	"Name": "Design Feature 2",
+	"SprintId": 2,
+	"__metadata": {
+		"uri": "Tasks(797)",
+		"type": "scrum.Task"
+	},
+	"SprintDetails": {
+		"__deferred": {
+			"uri": "Tasks(797)/SprintDetails"
+		}
+	}
+}, {
+	"Estimate": 4,
+	"Id": 7,
+	"Name": "Implement Feature 2",
+	"SprintId": 2,
+	"__metadata": {
+		"uri": "Tasks(9597)",
+		"type": "scrum.Task"
+	},
+	"SprintDetails": {
+		"__deferred": {
+			"uri": "Tasks(9597)/SprintDetails"
+		}
+	}
+}, {
+	"Estimate": 5,
+	"Id": 8,
+	"Name": "Test Feature 2",
+	"SprintId": 2,
+	"__metadata": {
+		"uri": "Tasks(2755)",
+		"type": "scrum.Task"
+	},
+	"SprintDetails": {
+		"__deferred": {
+			"uri": "Tasks(2755)/SprintDetails"
+		}
+	}
+}, {
+	"Estimate": 7,
+	"Id": 9,
+	"Name": "Document Feature 2",
+	"SprintId": 2,
+	"__metadata": {
+		"uri": "Tasks(6291)",
+		"type": "scrum.Task"
+	},
+	"SprintDetails": {
+		"__deferred": {
+			"uri": "Tasks(6291)/SprintDetails"
+		}
+	}
+}, {
+	"Estimate": 14,
+	"Id": 10,
+	"Name": "Feature 3",
+	"SprintId": 1,
+	"__metadata": {
+		"uri": "Tasks(5128)",
+		"type": "scrum.Task"
+	},
+	"SprintDetails": {
+		"__deferred": {
+			"uri": "Tasks(5128)/SprintDetails"
+		}
+	}
+}]

@@ -1,0 +1,81 @@
+[{
+	"EndDate": "/Date(1428638400000)/",
+	"Id": 1,
+	"Name": "Sprint 1",
+	"StartDate": "/Date(1427688000000)/",
+	"Status": "Finished",
+	"__metadata": {
+		"uri": "Sprints(3867)",
+		"type": "scrum.Sprint"
+	},
+	"SprintUserDetails": {
+		"__deferred": {
+			"uri": "Sprints(3867)/SprintUserDetails"
+		}
+	},
+	"TaskDetails": {
+		"__deferred": {
+			"uri": "Sprints(3867)/TaskDetails"
+		}
+	}
+}, {
+	"EndDate": "/Date(1429848000000)/",
+	"Id": 2,
+	"Name": "Sprint 2",
+	"StartDate": "/Date(1428897600000)/",
+	"Status": "Finished",
+	"__metadata": {
+		"uri": "Sprints(9703)",
+		"type": "scrum.Sprint"
+	},
+	"SprintUserDetails": {
+		"__deferred": {
+			"uri": "Sprints(9703)/SprintUserDetails"
+		}
+	},
+	"TaskDetails": {
+		"__deferred": {
+			"uri": "Sprints(9703)/TaskDetails"
+		}
+	}
+}, {
+	"EndDate": "/Date(1431057600000)/",
+	"Id": 3,
+	"Name": "Sprint 3",
+	"StartDate": "/Date(1430107200000)/",
+	"Status": "Finished",
+	"__metadata": {
+		"uri": "Sprints(4891)",
+		"type": "scrum.Sprint"
+	},
+	"SprintUserDetails": {
+		"__deferred": {
+			"uri": "Sprints(4891)/SprintUserDetails"
+		}
+	},
+	"TaskDetails": {
+		"__deferred": {
+			"uri": "Sprints(4891)/TaskDetails"
+		}
+	}
+}, {
+	"EndDate": "/Date(1432872000000)/",
+	"Id": 4,
+	"Name": "Sprint 4",
+	"StartDate": "/Date(1431316800000)/",
+	"Status": "Planning",
+	"__metadata": {
+		"uri": "Sprints(6332)",
+		"type": "scrum.Sprint"
+	},
+	"SprintUserDetails": {
+		"__deferred": {
+			"uri": "Sprints(6332)/SprintUserDetails"
+		}
+	},
+	"TaskDetails": {
+		"__deferred": {
+			"uri": "Sprints(6332)/TaskDetails"
+		}
+	}
+}]

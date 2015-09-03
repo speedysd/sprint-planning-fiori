@@ -1,0 +1,102 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<edmx:Edmx Version="1.0" xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx">
+	<edmx:DataServices m:DataServiceVersion="1.0" xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata">
+		<Schema Namespace="scrum" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+			<EntityType Name="SprintUser">
+				<Key>
+					<PropertyRef Name="Id"/>
+				</Key>
+				<Property Name="Capacity" Type="Edm.Int32"/>
+				<Property Name="Id" Nullable="false" Type="Edm.Int64"/>
+				<Property Name="SprintId" Nullable="true" Type="Edm.Int64"/>
+				<Property Name="UserId" Nullable="true" Type="Edm.Int64"/>
+				<NavigationProperty FromRole="SprintUser" Name="SprintDetails" Relationship="scrum.Sprint_SprintUser" ToRole="Sprint"/>
+				<NavigationProperty FromRole="SprintUser" Name="UserDetails" Relationship="scrum.SprintUser_User" ToRole="User"/>
+			</EntityType>
+			<EntityType Name="Sprint">
+				<Key>
+					<PropertyRef Name="Id"/>
+				</Key>
+				<Property Name="EndDate" Type="Edm.DateTime"/>
+				<Property Name="Id" Nullable="false" Type="Edm.Int64"/>
+				<Property MaxLength="255" Name="Name" Nullable="true" Type="Edm.String"/>
+				<Property Name="StartDate" Type="Edm.DateTime"/>
+				<Property Name="Status" Type="Edm.String"/>
+				<NavigationProperty FromRole="Sprint" Name="SprintUserDetails" Relationship="scrum.Sprint_SprintUser" ToRole="SprintUser"/>
+				<NavigationProperty FromRole="Sprint" Name="TaskDetails" Relationship="scrum.Sprint_Task" ToRole="Task"/>
+			</EntityType>
+			<EntityType Name="User">
+				<Key>
+					<PropertyRef Name="Id"/>
+				</Key>
+				<Property Name="Id" Nullable="false" Type="Edm.Int64"/>
+				<Property MaxLength="255" Name="Name" Nullable="true" Type="Edm.String"/>
+				<NavigationProperty FromRole="User" Name="SprintUserDetails" Relationship="scrum.SprintUser_User" ToRole="SprintUser"/>
+			</EntityType>
+			<EntityType Name="Task">
+				<Key>
+					<PropertyRef Name="Id"/>
+				</Key>
+				<Property Name="Estimate" Type="Edm.Int32"/>
+				<Property Name="Id" Nullable="false" Type="Edm.Int64"/>
+				<Property MaxLength="255" Name="Name" Nullable="true" Type="Edm.String"/>
+				<Property Name="SprintId" Nullable="true" Type="Edm.Int64"/>
+				<NavigationProperty FromRole="Task" Name="SprintDetails" Relationship="scrum.Sprint_Task" ToRole="Sprint"/>
+			</EntityType>
+			<Association Name="Sprint_SprintUser">
+				<End Multiplicity="*" Role="SprintUser" Type="scrum.SprintUser"/>
+				<End Multiplicity="1" Role="Sprint" Type="scrum.Sprint"/>
+				<ReferentialConstraint>
+					<Principal Role="Sprint">
+						<PropertyRef Name="Id"/>
+					</Principal>
+					<Dependent Role="SprintUser">
+						<PropertyRef Name="SprintId"/>
+					</Dependent>
+				</ReferentialConstraint>
+			</Association>
+			<Association Name="SprintUser_User">
+				<End Multiplicity="*" Role="SprintUser" Type="scrum.SprintUser"/>
+				<End Multiplicity="1" Role="User" Type="scrum.User"/>
+				<ReferentialConstraint>
+					<Principal Role="User">
+						<PropertyRef Name="Id"/>
+					</Principal>
+					<Dependent Role="SprintUser">
+						<PropertyRef Name="UserId"/>
+					</Dependent>
+				</ReferentialConstraint>
+			</Association>
+			<Association Name="Sprint_Task">
+				<End Multiplicity="1" Role="Sprint" Type="scrum.Sprint"/>
+				<End Multiplicity="*" Role="Task" Type="scrum.Task"/>
+				<ReferentialConstraint>
+					<Principal Role="Sprint">
+						<PropertyRef Name="Id"/>
+					</Principal>
+					<Dependent Role="Task">
+						<PropertyRef Name="SprintId"/>
+					</Dependent>
+				</ReferentialConstraint>
+			</Association>
+			<EntityContainer Name="scrumContainer" m:IsDefaultEntityContainer="true">
+				<EntitySet EntityType="scrum.SprintUser" Name="SprintUsers"/>
+				<EntitySet EntityType="scrum.Sprint" Name="Sprints"/>
+				<EntitySet EntityType="scrum.User" Name="Users"/>
+				<EntitySet EntityType="scrum.Task" Name="Tasks"/>
+				<AssociationSet Association="scrum.Sprint_SprintUser" Name="Sprint_SprintUserSet">
+					<End EntitySet="SprintUsers" Role="SprintUser"/>
+					<End EntitySet="Sprints" Role="Sprint"/>
+				</AssociationSet>
+				<AssociationSet Association="scrum.SprintUser_User" Name="SprintUser_UserSet">
+					<End EntitySet="SprintUsers" Role="SprintUser"/>
+					<End EntitySet="Users" Role="User"/>
+				</AssociationSet>
+				<AssociationSet Association="scrum.Sprint_Task" Name="Sprint_TaskSet">
+					<End EntitySet="Sprints" Role="Sprint"/>
+					<End EntitySet="Tasks" Role="Task"/>
+				</AssociationSet>
+			</EntityContainer>
+		</Schema>
+	</edmx:DataServices>
+</edmx:Edmx>

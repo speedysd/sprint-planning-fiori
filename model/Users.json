@@ -1,0 +1,121 @@
+[{
+	"Id": 1,
+	"Name": "Sergey",
+	"__metadata": {
+		"uri": "Users(860)",
+		"type": "scrum.User"
+	},
+	"SprintUserDetails": {
+		"__deferred": {
+			"uri": "Users(860)/SprintUserDetails"
+		}
+	}
+}, {
+	"Id": 2,
+	"Name": "Dheeraj",
+	"__metadata": {
+		"uri": "Users(4629)",
+		"type": "scrum.User"
+	},
+	"SprintUserDetails": {
+		"__deferred": {
+			"uri": "Users(4629)/SprintUserDetails"
+		}
+	}
+}, {
+	"Id": 3,
+	"Name": "Chris",
+	"__metadata": {
+		"uri": "Users(421)",
+		"type": "scrum.User"
+	},
+	"SprintUserDetails": {
+		"__deferred": {
+			"uri": "Users(421)/SprintUserDetails"
+		}
+	}
+}, {
+	"Id": 4,
+	"Name": "Urvi",
+	"__metadata": {
+		"uri": "Users(1723)",
+		"type": "scrum.User"
+	},
+	"SprintUserDetails": {
+		"__deferred": {
+			"uri": "Users(1723)/SprintUserDetails"
+		}
+	}
+}, {
+	"Id": 5,
+	"Name": "Xuan",
+	"__metadata": {
+		"uri": "Users(8962)",
+		"type": "scrum.User"
+	},
+	"SprintUserDetails": {
+		"__deferred": {
+			"uri": "Users(8962)/SprintUserDetails"
+		}
+	}
+}, {
+	"Id": 6,
+	"Name": "Francois",
+	"__metadata": {
+		"uri": "Users(4334)",
+		"type": "scrum.User"
+	},
+	"SprintUserDetails": {
+		"__deferred": {
+			"uri": "Users(4334)/SprintUserDetails"
+		}
+	}
+}, {
+	"Id": 7,
+	"Name": "Jose",
+	"__metadata": {
+		"uri": "Users(7409)",
+		"type": "scrum.User"
+	},
+	"SprintUserDetails": {
+		"__deferred": {
+			"uri": "Users(7409)/SprintUserDetails"
+		}
+	}
+}, {
+	"Id": 8,
+	"Name": "Anupama",
+	"__metadata": {
+		"uri": "Users(2003)",
+		"type": "scrum.User"
+	},
+	"SprintUserDetails": {
+		"__deferred": {
+			"uri": "Users(2003)/SprintUserDetails"
+		}
+	}
+}, {
+	"Id": 9,
+	"Name": "John",
+	"__metadata": {
+		"uri": "Users(7516)",
+		"type": "scrum.User"
+	},
+	"SprintUserDetails": {
+		"__deferred": {
+			"uri": "Users(7516)/SprintUserDetails"
+		}
+	}
+}, {
+	"Id": 10,
+	"Name": "Paul-Maxim",
+	"__metadata": {
+		"uri": "Users(4422)",
+		"type": "scrum.User"
+	},
+	"SprintUserDetails": {
+		"__deferred": {
+			"uri": "Users(4422)/SprintUserDetails"
+		}
+	}
+}]

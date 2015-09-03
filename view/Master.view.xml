@@ -1,0 +1,75 @@
+<mvc:View 
+    controllerName="sprint.planning.fiori.view.Master"
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns:footerbar="sap.ushell.ui.footerbar">
+    <Page 
+        id="masterPage" 
+        title="{i18n>masterTitle}"
+        showNavButton="true">
+        <subHeader
+            id="masterSubHeader">
+            <Bar 
+                id="searchBar">
+                <contentMiddle>
+                    <SearchField 
+                        id="searchField" 
+                        search="onSearch" 
+                        width="100%" 
+                        placeholder="{i18n>masterSearchPlaceholder}" 
+                        showRefreshButton="{device>/isNoTouch}" 
+                        tooltip="{i18n>masterSearchTooltip}">
+                    </SearchField>
+                </contentMiddle>
+            </Bar>
+        </subHeader>
+        <content>
+            <List 
+                id="list" 
+                select="onSelect" 
+                mode="{device>/listMode}" 
+                noDataText="{i18n>masterListNoDataText}" 
+                growing="true" 
+                growingScrollToLoad="true" 
+                updateFinished="onUpdateFinished"
+				items="{/Sprints}"> 
+                <items
+                    id="masterList">
+                    <ObjectListItem 
+                        id="mainListItem" 
+                        press="onSelect" 
+                        type="{device>/listItemType}" 
+                        counter="0" 
+						title="{Name}"
+						number=""
+						numberUnit=""
+                        markFavorite="false" 
+                        markFlagged="false" 
+                        showMarkers="false">
+	    				<firstStatus>
+        					<ObjectStatus
+        						text="{path: 'Status', formatter: 'sprint.planning.fiori.util.formatter.formatStatusText'}"
+        						state="{path: 'Status', formatter: 'sprint.planning.fiori.util.formatter.formatStatus'}"/>
+        				</firstStatus>
+    					<attributes>
+    						<ObjectAttribute text="{path: 'StartDate', formatter: 'sprint.planning.fiori.util.formatter.dateShortFormatter'} - {path: 'EndDate', formatter: 'sprint.planning.fiori.util.formatter.dateShortFormatter'}" />
+    					</attributes>
+                        <core:ExtensionPoint 
+                            name="extListItemInfo"/>
+                    </ObjectListItem>
+                </items>
+            </List>
+        </content>
+        <footer
+            id="masterFooter">
+            <Bar 
+                id="masterToolbar">
+				<contentRight>
+					<Button  icon="sap-icon://sort" visible ="{appProperties>/isSingleSelect}" enabled="{appProperties>/noEditMode}" press="onSortPressed" id="sortButton" />
+					<Button  icon="sap-icon://add" visible ="{appProperties>/isSingleSelect}" enabled ="{appProperties>/isEditAllowed}" press="onAddPressed" id="addButton" />
+				</contentRight>			
+            </Bar>
+        </footer>
+    </Page>
+</mvc:View>

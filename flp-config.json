@@ -1,0 +1,35 @@
+{
+    "application": {
+        "id": "",
+        "title": "asd",
+        "description": "qwe",
+        "type": "SAP_UI5_Component",
+        "componentUrl": "/",
+        "appUrl": "#flp-runApp?html5App=asd&SAPUI5.Component=asd&url=/",
+        "navigationComponentName": "asd",
+        "intentSemanticObject": "",
+        "intentAction": "",
+        "html5ApplicationName": "asd",
+        "HCPParentApplicationName": ""
+    },
+    "assignment": {
+        "groups": [],
+        "contentPackages": [
+            "8aa0b279-4d24-42aa-98dd-2bec671c4a86-1432510190541"
+        ],
+        "categories": [
+            "8c632d4a-e5d3-408a-8bd6-8a866da74c44-1432510106789"
+        ]
+    },
+    "tile": {
+        "type": "StaticTile",
+        "title": "Sprint",
+        "subtitle": "Planning",
+        "searchKeywords": "Sprint,Planning",
+        "displayIconUrl": "sap-icon://edit",
+        "displayInfoText": "",
+        "size": "1x1",
+        "serviceURL": "",
+        "refreshInterval": ""
+    }
+}

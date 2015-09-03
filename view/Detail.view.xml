@@ -1,0 +1,89 @@
+<mvc:View xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns:l="sap.ui.layout" xmlns:f="sap.ui.layout.form" controllerName="sprint.planning.fiori.view.Detail">
+    <Page id="detailPage" navButtonPress="onNavBack" title="{i18n&gt;detailTitle}" showNavButton="{device&gt;/isPhone}">
+        <content>
+            <ObjectHeader id="detailHeader" title="{Name}" number="" numberUnit="" introActive="false" titleActive="false" iconActive="false">
+                <attributes id="detailAttributes">                
+					<ObjectAttribute
+					    id="oaTeamCapasity"
+						title="{i18n>detail.teamCapasity}"/>
+					<ObjectAttribute
+					    id="oaTasksEstimate"
+						title="{i18n>detail.tasksEstimate}"/>
+                </attributes>
+				<statuses>
+					<ObjectStatus
+						text="{path: 'Status', formatter: 'sprint.planning.fiori.util.formatter.formatStatusText'}"
+						state="{path: 'Status', formatter: 'sprint.planning.fiori.util.formatter.formatStatus'}"/>
+					<ObjectStatus
+						text="{path: 'StartDate', formatter: 'sprint.planning.fiori.util.formatter.dateShortFormatter'} - {path: 'EndDate', formatter: 'sprint.planning.fiori.util.formatter.dateShortFormatter'}"/>
+				</statuses>
+            </ObjectHeader>
+            <IconTabBar id="idIconTabBar" expanded="true">
+    			<items id="detailsItems">
+                    <IconTabFilter id="iconTabFilterTeam" icon="sap-icon://collaborate">
+                        <content>
+                    		<Table id="tableTeam" headerText="Team members (4)" updateFinished="onUpdateFinished"
+                    			items="{path: 'SprintUserDetails', parameters: {expand: 'UserDetails'}}">
+                    			<columns>
+                    				<Column minScreenWidth="Tablet" demandPopin="true" width="30%">
+                    					<header>
+                    						<Label text="Name" />
+                    					</header>
+                    				</Column>
+                    				<Column minScreenWidth="Tablet" demandPopin="true" hAlign="Right" width="20%">
+                    					<header>
+                    						<Label text="Capacity" />
+                    					</header>
+                    				</Column>
+                    			</columns>
+                    			<ColumnListItem>
+                    				<cells>
+                    					<Text text="{UserDetails/Name}" class="sapMTableContentMargin" />
+                    					<Text text="{Capacity}" class="sapMTableContentMargin" />
+                    				</cells>
+                    			</ColumnListItem>
+                    		</Table>
+                        </content>
+                    </IconTabFilter>
+                    <IconTabFilter id="iconTabFilterTasks" icon="sap-icon://task">
+                        <content>
+                    		<Table id="tableTasks" headerText="Tasks (8)" updateFinished="onUpdateFinished"
+                    			items="{TaskDetails}">
+                    			<columns>
+                    				<Column minScreenWidth="Tablet" demandPopin="true" width="30%">
+                    					<header>
+                    						<Label text="Title" />
+                    					</header>
+                    				</Column>
+                    				<Column minScreenWidth="Tablet" demandPopin="true" hAlign="Right" width="20%">
+                    					<header>
+                    						<Label text="Estimate" />
+                    					</header>
+                    				</Column>
+                    			</columns>
+                    			<ColumnListItem>
+                    				<cells>
+                    					<Text text="{Name}" class="sapMTableContentMargin" />
+                    					<Text text="{Estimate}" class="sapMTableContentMargin" />
+                    				</cells>
+                    			</ColumnListItem>
+                    		</Table>
+                        </content>
+                    </IconTabFilter>
+    				<core:ExtensionPoint name="extIconTabFilter"/>
+                </items>
+            </IconTabBar>
+    		<core:ExtensionPoint name="extDetail"/>
+        </content>
+        <footer id="detailFooter">
+            <Toolbar id="detailToolbar">
+                <content>
+                    <ToolbarSpacer id="toolbarSpacer">
+                    </ToolbarSpacer>
+                    <Button id="actionButton" press="openActionSheet" icon="sap-icon://action">
+                    </Button>
+                </content>
+            </Toolbar>
+        </footer>
+    </Page>
+</mvc:View>
