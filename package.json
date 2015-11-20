@@ -1,0 +1,15 @@
+{
+  "name": "sprint-planning-fiori",
+  "version": "1.0.0",
+  "description": "Sprint planning FIORI application",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\""
+  },
+  "keywords": [
+    "npm",
+    "scripting"
+  ],
+  "author": "Powered by Sergey",
+  "license": "MIT"
+}
